@@ -1,5 +1,7 @@
+//! word_type.rs for our mad libs game
 use std::io::{self, Write};
 
+// word types are contained in an enum
 #[derive(Debug, Copy, Clone)]
 pub enum WordType {
     Adjective,
@@ -14,6 +16,7 @@ pub enum WordType {
     Exclamation,
 }
 
+/// a helper function for prompting for and recieving input
 fn prompt_user (prompt: &str, buffer: &mut String, error: &str) {
     print!("{}", prompt);
 
@@ -26,7 +29,7 @@ fn prompt_user (prompt: &str, buffer: &mut String, error: &str) {
         .expect(error);
 }
 
-
+/// matching the WordType enumerations to an input prompt
 pub fn match_word_type(word_type: WordType) -> String {
     let mut word = String::new();
     

@@ -37,7 +37,9 @@ fn main() {
     );
 
     println!("Welcome to Mad Libs: {}", template.name);
+
     let mad_libs = template.fill();
+    
     println!("\n=============================================\n");
     println!("{}", mad_libs);
 }
