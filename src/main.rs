@@ -1,3 +1,5 @@
+//! main.rs for our mad libs game
+
 pub mod word_type;
 pub mod template;
 
@@ -7,6 +9,7 @@ use crate::word_type::WordType;
 
 
 fn main() {
+    // creating a new madlibs template
     let template = Template::new (
         "The Tech Interview",
         vec![
@@ -36,10 +39,13 @@ fn main() {
         ],
     );
 
+    // printing an introduction
     println!("Welcome to Mad Libs: {}", template.name);
 
+    // filling in the template
     let mad_libs = template.fill();
-    
+
+    // displaying the mad libs
     println!("\n=============================================\n");
     println!("{}", mad_libs);
 }

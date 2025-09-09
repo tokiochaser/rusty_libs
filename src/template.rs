@@ -1,5 +1,8 @@
+//! templte.rs for our mad libs game
 use crate::word_type::{WordType, match_word_type};
 
+
+// define the TemplatePiece enum and Template struct
 #[derive(Debug)]
 pub enum TemplatePiece {
     Text(String),
@@ -12,6 +15,7 @@ pub struct Template {
     pub parts: Vec<TemplatePiece>,
 }
 
+// the template struct has methods for creating an instance and to be filled in
 impl Template {
     pub fn new(name: &str, parts: Vec<TemplatePiece>) -> Self
     {
