@@ -54,7 +54,7 @@ Contributions welcome! Whether you have an idea for a template, a design improve
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://license/) file for details.
+This project is licensed under the MIT License - see the [LICENSE]([https://license/](https://github.com/tokiochaser/rusty_libs/blob/main/LICENSE.md)) file for details.
 
 ## Acknowledgments
 
